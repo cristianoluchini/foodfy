@@ -138,3 +138,8 @@ footer p {
   line-height: 24px;
   color: #999;
 }
+
+.about p {
+  margin: 20px 0 30px;
+  color: #444;
+}
