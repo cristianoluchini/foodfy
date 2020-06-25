@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --color-primary: #111;
+  --color-secondary: rgba(0,0,0,0.7);
+  --color-gray: #777;
+  --color-salmon: #fbdfdb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: var(--color-primary);
+  font-size: 32px;
+  line-height: 42px;  
+}
+
+h2 {
+  color: var(--color-primary);
+  font-size: 24px;
+  line-height: 34px;
+}
+
+h3 {
+  color: var(--color-primary);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+header,
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+header nav {
+  text-align: right;
+}
+
+header nav a {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-primary);
+  text-decoration: none;
+  margin: 0 15px;
+  
+}
+
+header nav a:last-of-type {
+  margin-right: 0;
+}
+
+header nav a:hover {
+  color: var(--color-salmon);
+  transition: color 400ms;
+}
+
+.banner {
+  background-color: var(--color-salmon);
+  border-radius: 30px;
+  display: grid;  
+  grid-template-columns: 1fr 1fr;
+  height: 366px;
+  margin-bottom: 50px;
+}
+
+.banner .content {
+  margin: 110px 60px;
+  width: 316px;
+}
+
+.banner .content h1 {
+  margin: 10px 0;
+}
+
+.banner .content p {
+  color: var(--color-secondary);
+}
+
+.banner .image {  
+  display: flex;  
+  align-items: flex-end;
+  margin: 0 auto;
+}
+
+.cards {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.cards .card img{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.cards .card p {
+  color: var(--color-gray);
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 5px;  
+}
+
+footer {
+  background-color: #EEE;
+  margin-top: 50px;  
+}
+
+footer p {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999;
+}
