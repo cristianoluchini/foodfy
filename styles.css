@@ -32,7 +32,7 @@ h2 {
 h3 {
   color: var(--color-primary);
   font-size: 18px;
-  line-height: 28px;
+  line-height: 21px;
   font-weight: normal;
 }
 
@@ -112,23 +112,27 @@ header nav a:hover {
   gap: 20px;
 }
 
+.cards .card {
+  margin-bottom: 10px;
+}
+
 .cards .card img{
   width: 100%;
   height: auto;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .cards .card p {
   color: var(--color-gray);
   font-size: 14px;
   line-height: 24px;
-  margin-top: 5px;  
+  margin-top: 5px;
 }
 
 footer {
   background-color: #EEE;
-  margin-top: 50px;  
+  margin-top: 40px;  
 }
 
 footer p {
