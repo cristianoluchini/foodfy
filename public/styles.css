@@ -14,6 +14,11 @@
   border: 0;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -46,6 +51,10 @@ header,
 main {
   max-width: 960px;
   margin: 0 auto;
+}
+
+main {
+  margin-bottom: 100px;
 }
 
 header {
@@ -135,6 +144,9 @@ header nav a:hover {
 footer {
   background-color: #eee;
   margin-top: 40px;  
+  bottom: 0;
+  width: 100%;
+  position: absolute;
 }
 
 footer p {
@@ -199,3 +211,14 @@ footer p {
   color: var(--color-third);
   cursor: pointer;
 }
+
+.not_found {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+

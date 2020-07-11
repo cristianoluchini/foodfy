@@ -25,6 +25,10 @@ server.get("/recipes", function(req, res) {
   res.render("recipes");
 });
 
+server.use(function(req, res) {
+  res.status(404).render("404");
+});
+
 server.listen(5000, function() {
   console.log("Server is runing!!!");
 })
