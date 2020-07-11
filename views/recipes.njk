@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Receitas Foodfy</title>
-</head>
-<body>
-  <header>
-    <a href="/"><img src="images/logo.png" alt="Logo Foodfy"></a>
-    <nav>
-      <a href="/">Início</a>
-      <a href="/about">Sobre</a>
-      <a href="/recipes">Receitas</a>
-    </nav>    
-  </header>
+{% extends "layout.njk" %}
+
+{% block content %}
   <main>    
     <div class="cards">
       <div class="card">
@@ -79,9 +65,7 @@
       </div>
     </div>
   </main>
-  <footer>
-    <p>Todos direitos reservados, receitas Foodfy.</p>
-  </footer>
+
   <div class="modal_overlay">
     <div class="modal">
       <img src="/images/asinhas.png" alt="Asinhas de frango ao barbecue">
@@ -91,5 +75,4 @@
     </div>
   </div>
   <script src="scripts.js"></script>
-</body>
-</html>
+{% endblock content %}
