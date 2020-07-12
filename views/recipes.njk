@@ -5,23 +5,15 @@
     <div class="cards">
 
       {% for recipe in recipes %}
-        <div class="card">
+        <div id="{{loop.index0}}" class="card">
           <img src="{{recipe.image}}" alt="{{recipe.title}}">
           <h3>{{recipe.title}}</h3>
-          <p>por {{recipe.author}}</p>
+          <p class="author">por {{recipe.author}}</p>
         </div>     
       {% endfor %}      
 
     </div>
   </main>
 
-  <div class="modal_overlay">
-    <div class="modal">
-      <img src="/images/asinhas.png" alt="Asinhas de frango ao barbecue">
-      <h1>Asinhas de frango ao barbecue</h1>
-      <p>por Vania Steroski</p>
-      <a class="close_modal">Fechar modal</a>
-    </div>
-  </div>
-  <script src="scripts.js"></script>
+  <script src="/scripts.js"></script>
 {% endblock content %}

@@ -16,14 +16,16 @@
       <div class="cards">
 
         {% for recipe in recipes %}
-          <div class="card">
+          <div id="{{loop.index0}}" class="card">
             <img src="{{recipe.image}}" alt="{{recipe.title}}">
             <h3>{{recipe.title}}</h3>
-            <p>por {{recipe.author}}</p>
+            <p class="author">por {{recipe.author}}</p>
           </div>
         {% endfor %}        
         
       </div>
     </main>
   </section>
+
+  <script src="/scripts.js"></script>
 {% endblock content %}
